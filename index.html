@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentaire Assainissement - Visite de Chantier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { dark: '#0f172a', primary: '#0ea5e9', slate: '#f8fafc' }
+                    },
+                    fontFamily: { display: ['Montserrat', 'sans-serif'], body: ['Open Sans', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-morphism { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .img-container { position: relative; overflow: hidden; border-radius: 1rem; aspect-ratio: 1 / 1; background: #e2e8f0; }
+        .img-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .img-container:hover img { transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-brand-slate font-body text-slate-800">
+
+    <header class="fixed top-0 w-full z-50 glass-morphism shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-display font-bold text-xl text-brand-dark">VISITE DE CHANTIER</span>
+            <div class="text-sm font-semibold text-slate-600">
+                Contact: 27 21 72 41 77
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-gradient pt-32 pb-20 px-6 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-display font-extrabold mb-4">Documentation <span class="text-brand-primary">Assainissement</span></h1>
+            <p class="text-slate-300">Rapport visuel de l'état d'avancement des travaux.</p>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 -mt-10 mb-16">
+        <div class="bg-black rounded-3xl shadow-2xl overflow-hidden border-4 border-white">
+            <video controls class="w-full h-full block" poster="c:\Users\HP ENVY\Downloads\c809ace5-7184-436b-839d-47f80b143794.mp4">
+                <source src="c:\Users\HP ENVY\Downloads\c809ace5-7184-436b-839d-47f80b143794.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </div>
+        <p class="text-center mt-4 text-slate-500 italic text-sm">Vidéo complète de la visite de chantier</p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 pb-20">
+        <h2 class="text-2xl font-display font-bold text-brand-dark mb-8 border-l-4 border-brand-primary pl-4">Galerie Photos</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="img-container shadow-md">
+                <img src="c:\Users\HP ENVY\Downloads\WhatsApp Image 2026-03-11 at 20.42.29 (4).jpeg" alt="Chantier">
+            </div>
+
+            <div class="img-container shadow-md">
+                <img src="c:\Users\HP ENVY\Downloads\WhatsApp Image 2026-03-11 at 20.42.29 (5).jpeg" alt="Chantier">
+            </div>
+
+            <div class="img-container shadow-md">
+                <img src="c:\Users\HP ENVY\Downloads\WhatsApp Image 2026-03-11 at 20.42.29 (6).jpeg" alt="Chantier">
+            </div>
+
+            <div class="img-container shadow-md">
+                <img src="c:\Users\HP ENVY\Downloads\WhatsApp Image 2026-03-12 at 23.18.56.jpeg" alt="Chantier">
+            </div>
+
+            <div class="img-container shadow-md">
+                <img src="c:\Users\HP ENVY\Downloads\WhatsApp Image 2026-03-12 at 23.18.56 (2).jpeg" alt="Chantier">
+            </div>
+
+            <div class="img-container shadow-md">
+                <img src="c:\Users\HP ENVY\Downloads\WhatsApp Image 2026-03-12 at 23.18.56 (1).jpeg" alt="Chantier">
+            </div>
+
+            <div class="img-container shadow-md">
+                <img src="c:\Users\HP ENVY\Downloads\WhatsApp Image 2026-03-11 at 20.42.29 (7).jpeg" alt="Chantier">
+            </div>
+
+            <div class="img-container shadow-md">
+                <img src="c:\Users\HP ENVY\Downloads\WhatsApp Image 2026-03-11 at 20.42.29.jpeg" alt="Chantier">
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-white py-10 px-6 text-center">
+        <p class="text-slate-400 text-sm mb-2">stock les images des travaux </p>
+        <p class="font-bold">27 21 72 41 77 - contact@estganaousmanesarl.com</p>
+11 BP 2399 Abidjan 11</p>
+        <p class="text-brand-primary text-sm mt-1"></p>
+    </footer>
+
+</body>
+</html>
